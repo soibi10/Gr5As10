@@ -57,7 +57,7 @@ namespace Gr5As10
         private void PrepareHighestPopulation()
         {
             City city = DBSQLite.GetInstance().FetchMostPopulatedCity();
-            HighestPopulation_Label.Content = "Highest population in " + city.Name + " - " + String.Format("{0:n}", city.Population);
+            HighestPopulation_Label.Content = "Highest population n " + city.Name + " - " + String.Format("{0:n}", city.Population);
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
